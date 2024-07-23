@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Light background for better contrast */
+    font-family: Arial, sans-serif;
+}
+
+#grid {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+#row {
+    display: flex;
+}
+
+.columns {
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; /* Slightly larger font for better visibility */
+    cursor: pointer; /* Pointer cursor to indicate clickable cells */
+    transition: background-color 0.3s ease;
+}
+
+.columns:hover {
+    background-color: #ddd; /* Highlight cell on hover */
+}
+
+.columns.x {
+    color: red; /* Different color for player X */
+}
+
+.columns.o {
+    color: blue; /* Different color for player O */
+}
